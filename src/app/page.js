@@ -1,9 +1,16 @@
-import Image from "next/image";
+import Header from "@/components/layout/Header";
+
 
 export default function HomePageS() {
   return (
-    <main> 
-      <h1>FlexSoft-site</h1>
+    <>
+    <Header />
+
+    <main className="pt-[120px]"> 
+      <h1 className="text-5xl text-center">
+        FlexSoft-site
+      </h1>
     </main>
+    </>
   );
 }
