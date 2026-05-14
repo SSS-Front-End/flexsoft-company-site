@@ -1,4 +1,6 @@
 import Header from "@/components/layout/Header";
+import SectionTitle from "@/components/ui/SectionTitle";
+import ServicesSection from "@/sections/home/ServicesSection";
 
 
 export default function HomePageS() {
@@ -7,9 +9,8 @@ export default function HomePageS() {
     <Header />
 
     <main className="pt-[120px]"> 
-      <h1 className="text-5xl text-center">
-        FlexSoft-site
-      </h1>
+      <SectionTitle />
+      <ServicesSection />
     </main>
     </>
   );

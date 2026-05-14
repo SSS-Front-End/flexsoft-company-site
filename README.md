@@ -39,3 +39,329 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # flexsoft-company-site
 Demo
 >>>>>>> 27f38716c2e45fe749c1dd6943646db46c42ddac
+
+
+
+# FlexSoft Company Website
+
+Современный корпоративный сайт компании на базе Next.js + TailwindCSS.
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- Next.js (App Router)
+- React
+- TailwindCSS v3
+- Framer Motion
+- Axios
+
+---
+
+# Project Goal
+
+Создать современный premium corporate website с:
+
+- красивым UI
+- responsive layout
+- анимациями
+- CMS интеграцией
+- SEO optimization
+- scalable architecture
+
+---
+
+# Planned CMS
+
+Планируется подключение:
+
+- Strapi
+или
+- Sanity
+
+Для:
+- постов
+- проектов
+- кейсов
+- услуг
+- изображений
+- контента администратора
+
+---
+
+# Current Project Structure
+
+```txt
+src/
+├── app/
+├── components/
+│   ├── ui/
+│   ├── layout/
+│   └── shared/
+├── sections/
+│   └── home/
+├── hooks/
+├── lib/
+├── services/
+├── styles/
+└── constants/
+```
+
+---
+
+# Installed Packages
+
+```bash
+npm install framer-motion axios clsx
+```
+
+---
+
+# Tailwind Setup
+
+Используется TailwindCSS v3.
+
+## tailwind.config.js
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/app/**/*.{js,jsx}",
+    "./src/components/**/*.{js,jsx}",
+    "./src/sections/**/*.{js,jsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+---
+
+# globals.css
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Используется custom dark theme:
+
+- background: #0B0F19
+- primary: #5B67FF
+- secondary: #8B5CF6
+
+---
+
+# Completed Components
+
+## UI Components
+
+### Container.jsx
+
+Reusable responsive container.
+
+### Button.jsx
+
+Primary rounded button component.
+
+### SectionTitle.jsx
+
+Reusable section typography component.
+
+---
+
+# Layout Components
+
+## Header.jsx
+
+Features:
+
+- fixed navbar
+- glassmorphism
+- responsive navigation
+- CTA button
+
+---
+
+# Sections
+
+## HeroSection.jsx
+
+Features:
+
+- glow background
+- gradient heading
+- CTA buttons
+- premium hero layout
+
+---
+
+## ServicesSection.jsx
+
+Features:
+
+- responsive cards
+- hover animation
+- reusable grid system
+
+---
+
+# Current Homepage Structure
+
+```jsx
+<Header />
+
+<main>
+  <HeroSection />
+  <ServicesSection />
+</main>
+```
+
+---
+
+# Design System
+
+## Colors
+
+```txt
+Background: #0B0F19
+Card: #131A2A
+Primary: #5B67FF
+Secondary: #8B5CF6
+Muted: #A1A1AA
+```
+
+---
+
+# UI Style
+
+- dark modern tech style
+- rounded UI
+- glassmorphism
+- gradients
+- glow effects
+- premium startup aesthetic
+
+---
+
+# Resolved Issues
+
+## Tailwind v4 issue
+
+Была проблема с:
+
+```txt
+@tailwindcss/oxide
+```
+
+Решение:
+- переход на TailwindCSS v3
+- переинициализация configs
+
+---
+
+# GitHub
+
+Repository:
+
+```txt
+flexsoft-company-site
+```
+
+---
+
+# Current Progress
+
+✅ Next.js setup  
+✅ Tailwind setup  
+✅ GitHub setup  
+✅ Design system  
+✅ Header  
+✅ Hero section  
+✅ Services section  
+✅ Responsive structure  
+✅ Reusable UI components
+
+---
+
+# Next Steps
+
+## Planned Development
+
+### UI
+- Mobile menu
+- Footer
+- About section
+- Projects section
+- Testimonials
+- Contact section
+
+### Animation
+- Framer Motion integration
+- Scroll animations
+- Hover interactions
+
+### Backend/CMS
+- Strapi or Sanity setup
+- API integration
+- Dynamic content
+- Admin dashboard
+
+### Production
+- SEO optimization
+- Metadata
+- Sitemap
+- Deployment
+
+---
+
+# Development Commands
+
+## Start development
+
+```bash
+npm run dev
+```
+
+---
+
+# Git Commands
+
+## Commit changes
+
+```bash
+git add .
+git commit -m "update"
+git push
+```
+
+---
+
+# Notes For Future Sessions
+
+Проект строится как production-ready scalable architecture.
+
+Main stack:
+
+```txt
+Next.js
+TailwindCSS
+Framer Motion
+CMS (planned)
+```
+
+Style direction:
+- premium
+- modern
+- minimal
+- dark tech company aesthetic
+
+Reference:
+FlexSoft Figma Design
+```

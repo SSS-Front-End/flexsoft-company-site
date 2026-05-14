@@ -1,4 +1,19 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0B0F19;
+  --foreground: #FFFFFF;
+
+  --primary: #5B67FF;
+  --secondary: #8B5CF6;
+
+  --muted: #A1A1AA;
+  --card: #131A2A;
+  --border: rgba(255,255,255,0.08);
+}
+
 
 * {
   margin: 0;
