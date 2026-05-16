@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import SectionTitle from "@/components/ui/SectionTitle";
+import ProductSection from "@/sections/home/ProductSection";
 import ServicesSection from "@/sections/home/ServicesSection";
 
 
@@ -8,10 +9,11 @@ export default function HomePageS() {
     <>
     <Header />
 
-    <main className="pt-[120px]"> 
-      <SectionTitle />
+    <main className="bg-[#F4F5F8]"> 
+      <ProductSection />
       <ServicesSection />
     </main>
     </>
   );
 }
+
