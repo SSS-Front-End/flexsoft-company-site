@@ -1,5 +1,7 @@
 "use client";
 
+import Button from "@/components/ui/Button";
+
 export default function OverlayMenu({ isOpen }) {
 
     return (
@@ -9,6 +11,9 @@ export default function OverlayMenu({ isOpen }) {
                 top-0
                 left-1/2
                 -translate-x-1/2
+
+                h-full
+                sm:h-[468px]
 
                 z-[49]
 
@@ -46,40 +51,14 @@ export default function OverlayMenu({ isOpen }) {
             `}
         >
 
-            <ul
-                className={`
-                    flex flex-col
-                    items-center
-                    gap-6
+            
+            <Button className={`bg-[#FE8206] w-[450px] h-[60px] rounded-[10px] my-10`}>
+                Оставить заявку
+            </Button>
 
-                    transition-all
-                    duration-500
-
-                    ${
-                        isOpen
-                            ? "opacity-100 translate-y-0 delay-300"
-                            : "opacity-0 translate-y-10"
-                    }
-                `}
-            >
-                <li>
-                    <a href="#" className="text-3xl text-white">
-                        Продукты
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" className="text-3xl text-white">
-                        Новости
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" className="text-3xl text-white">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
+           <div>
+                <a href="#">+998 555 17-08-17 <span>(многоканальный)</span></a>
+           </div>
 
         </div>
     );

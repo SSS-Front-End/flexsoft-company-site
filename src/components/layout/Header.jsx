@@ -42,7 +42,7 @@ export default function Header() {
                         </a>
                     </div>
 
-                    <nav className="
+                    <nav className={`
                         hidden md:flex
                         items-center
                         gap-4
@@ -51,7 +51,7 @@ export default function Header() {
                         md:text-[14px]
                         xl:text-[16px]
                         lg:text-[20px]
-                    ">
+                    `}>
                         <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">Продукты</a>
                         <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">Новости</a>
                         <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">Партнеры</a>
