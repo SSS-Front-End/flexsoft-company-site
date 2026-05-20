@@ -1,5 +1,5 @@
-import Container from "@/components/ui/Container"
-import SectionTitle from "@/components/ui/SectionTitle"
+import Container from "@/app/[locale]/components/ui/Container"
+import SectionTitle from "@/app/[locale]/components/ui/SectionTitle"
 
 const services = [
     {

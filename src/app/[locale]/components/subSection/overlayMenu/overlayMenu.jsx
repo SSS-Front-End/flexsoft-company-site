@@ -1,6 +1,7 @@
 "use client";
 
-import Button from "@/components/ui/Button";
+import Button from "@/app/[locale]/components/ui/Button";
+import LanguageButton from "@/app/[locale]/components/ui/LanguageButton";
 
 export default function OverlayMenu({ isOpen }) {
 
@@ -59,6 +60,8 @@ export default function OverlayMenu({ isOpen }) {
            <div>
                 <a href="#">+998 555 17-08-17 <span>(многоканальный)</span></a>
            </div>
+
+           <LanguageButton />
 
         </div>
     );

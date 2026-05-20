@@ -2,7 +2,7 @@
 
 import Container from "../ui/Container";
 import { Inter } from 'next/font/google';
-import '../../app/globals.css';
+import '../../../globals.css';
 import Image from 'next/image'; 
 import OverlayMenu from "../subSection/overlayMenu/overlayMenu.jsx"
 import { useState } from 'react';
