@@ -2,6 +2,7 @@
 
 import Button from "@/app/[locale]/components/ui/Button";
 import LanguageButton from "@/app/[locale]/components/ui/LanguageButton";
+import SocialIcon from "../../ui/SocialIcon";
 
 export default function OverlayMenu({ isOpen }) {
 
@@ -62,6 +63,10 @@ export default function OverlayMenu({ isOpen }) {
            </div>
 
            <LanguageButton />
+
+           <SocialIcon />
+
+           <p className="mt-[24px]">© 2003–2025, ООО «Flex Soft»</p>
 
         </div>
     );

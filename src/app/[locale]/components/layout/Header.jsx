@@ -2,7 +2,7 @@
 
 import Container from "../ui/Container";
 import { Inter } from 'next/font/google';
-import '../../../globals.css';
+import '../../globals.css';
 import Image from 'next/image'; 
 import OverlayMenu from "../subSection/overlayMenu/overlayMenu.jsx"
 import { useState } from 'react';
@@ -21,12 +21,12 @@ export default function Header() {
 
     return (
         <>
-            <header className="
+            <header className={`
                 fixed top-0  w-[100%] sm:w-[90%] left-1/2 -translate-x-1/2 z-50
-                border-b border-white/10 backdrop-blur-md
+                border-b border-none backdrop-blur-md
                 rounded-b-[25px] sm:rounded-b-[50px]
-                bg-[linear-gradient(110.09deg,_#1E2269_0.51%,_#4379C0_100%)]
-            ">
+                ${isOpen ? 'bg-none bg-transparent' : 'bg-[linear-gradient(110.09deg,_#1E2269_0.51%,_#4379C0_100%)]'}
+                ${isOpen ? "after:absolute after:content-[''] after:bottom-0 after:left-1/2 after:-translate-x-1/2c after:w-[90%] after:h-[2px] after:bg-[#FFFFFF80]" : ""} `}>
                 <Container className="h-[60px] sm:h-[60px] md:h-[70px] lg:h-[80px] xl:h-[100px] flex items-center justify-between !max-w-full !px-[30px] sm:!px-[40px] md:!px-[50px] xl:!px-[99.9px] lg:!px-[100px]">
                     
                     <div className="flex items-center max-w-[150px] h-[25px] sm:max-w-[200px] sm:h-[50px]">

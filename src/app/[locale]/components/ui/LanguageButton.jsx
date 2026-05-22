@@ -11,9 +11,9 @@ export default function LanguageButton() {
     const pathname = usePathname();
 
     const languages = [
-        { code: "ru", name: "Русский", flag: "/LanguageButton/LanguageButtonRu.svg" },
-        { code: "en", name: "English", flag: "/LanguageButton/LanguageButtonUSA.svg" },
-        { code: "uz", name: "O'zbek", flag: "/LanguageButton/LanguageButtonUz.svg" }
+        { code: "ru", name: "Рус", flag: "/LanguageButton/LanguageButtonRu.svg" },
+        { code: "en", name: "Eng", flag: "/LanguageButton/LanguageButtonUSA.svg" },
+        { code: "uz", name: "O'zb", flag: "/LanguageButton/LanguageButtonUz.svg" }
     ];
 
     const switchLanguage = (locale) => {
@@ -22,7 +22,7 @@ export default function LanguageButton() {
 
 
  return(
-            <>
+            <div className="flex gap-4 my-[24px]">
                 {languages.map((lang) => {
 
                     const isActive = currentLocale === lang.code;
@@ -30,7 +30,8 @@ export default function LanguageButton() {
                     return (
                         <div key={lang.code}
                         className={`relative h-[30px] bg-[#FFFFFF80] rounded-[15px] flex items-center
-                        ${  isActive ? "bg-[#FFFFFF80]" : "bg=[#FFFFFF1A]" }`}
+                        cursor-pointer hover:bg-[#FFFFFF80] transition-colors duration-200
+                        ${  isActive ? "bg-[#FFFFFF80]" : "bg-[#FFFFFF1A]" }`}
                         onClick={() => switchLanguage(lang.code)}
                         >
 
@@ -47,6 +48,6 @@ export default function LanguageButton() {
                         
                 })}
                         
-            </>
+            </div>
         );
 }
