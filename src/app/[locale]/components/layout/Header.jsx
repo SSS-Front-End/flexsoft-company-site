@@ -1,19 +1,11 @@
 "use client";
 
 import Container from "../ui/Container";
-import { Inter } from 'next/font/google';
 import '../../globals.css';
 import Image from 'next/image'; 
 import OverlayMenu from "../subSection/overlayMenu/overlayMenu.jsx"
 import { useState } from 'react';
-import { time } from "framer-motion";
 import { useTranslations } from "next-intl";
-
-const inter = Inter({
-    subsets: ['latin', 'cyrillic'],
-    variable: '--font-inter',
-});
-
 
 export default function Header() {
 
@@ -54,12 +46,12 @@ export default function Header() {
                         xl:text-[16px]
                         lg:text-[20px]
                     `}>
-                        <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">{navT("products")}</a>
-                        <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">{navT("news")}</a>
-                        <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">{navT("partners")}</a>
-                        <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">{navT("team")}</a>
-                        <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">{navT("vacancies")}</a>
-                        <a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent hover:border-[#FE8206] transition-all duration-200">{navT("contacts")}</a>
+                        <div className="relative"><a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent after:absolute after:content-[''] after:left-1/2 after:-translate-x-1/2 after:bottom-[-15px] after:w-[90%] after:h-[2px] after:hover:bg-[#FE8206] after:transition-all after:duration-150">{navT("products")}</a></div>
+                        <div className="relative"><a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent after:absolute after:content-[''] after:left-1/2 after:-translate-x-1/2 after:bottom-[-15px] after:w-[90%] after:h-[2px] after:hover:bg-[#FE8206] after:transition-all after:duration-150">{navT("news")}</a></div>
+                        <div className="relative"><a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent after:absolute after:content-[''] after:left-1/2 after:-translate-x-1/2 after:bottom-[-15px] after:w-[90%] after:h-[2px] after:hover:bg-[#FE8206] after:transition-all after:duration-150">{navT("partners")}</a></div>
+                        <div className="relative"><a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent after:absolute after:content-[''] after:left-1/2 after:-translate-x-1/2 after:bottom-[-15px] after:w-[90%] after:h-[2px] after:hover:bg-[#FE8206] after:transition-all after:duration-150">{navT("team")}</a></div>
+                        <div className="relative"><a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent after:absolute after:content-[''] after:left-1/2 after:-translate-x-1/2 after:bottom-[-15px] after:w-[90%] after:h-[2px] after:hover:bg-[#FE8206] after:transition-all after:duration-150">{navT("vacancies")}</a></div>
+                        <div className="relative"><a href="#" className="px-3 py-2 hover:border-b-[2px] border-transparent after:absolute after:content-[''] after:left-1/2 after:-translate-x-1/2 after:bottom-[-15px] after:w-[90%] after:h-[2px] after:hover:bg-[#FE8206] after:transition-all after:duration-150">{navT("contacts")}</a></div>
                     </nav>
 
                     
@@ -77,7 +69,7 @@ export default function Header() {
                     {isOpen && (
                         <div
                             onClick={() => setIsOpen(false)}
-                            className={` ${inter.className} w-[33px] h-[33px] sm:w-[40px] sm:h-[40px]
+                            className={`w-[33px] h-[33px] sm:w-[40px] sm:h-[40px]
                             cursor-pointer text-[40px] flex items-center justify-center
                             font-light leading-none`}
                         > ×

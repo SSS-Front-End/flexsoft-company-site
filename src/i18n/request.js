@@ -1,12 +1,21 @@
-import { getRequestConfig } from 'next-intl/server';
+import { getRequestConfig } from "next-intl/server";
+
+const messages = {
+    ru: () => import("../../messages/ru.json"),
+    en: () => import("../../messages/en.json"),
+    uz: () => import("../../messages/uz.json"),
+};
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  // Получаем текущий язык из запроса
-  const locale = await requestLocale;
 
-  return {
-    locale,
-    // Загружаем JSON-файлы переводов из папки messages в корне
-    messages: (await import(`../../messages/${locale}.json`)).default
-  };
+    const requested = await requestLocale;
+
+    const locale = ["ru", "en", "uz"].includes(requested)
+        ? requested
+        : "ru";
+
+    return {
+        locale,
+        messages: (await messages[locale]()).default
+    };
 });
