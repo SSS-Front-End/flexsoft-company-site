@@ -21,6 +21,14 @@
   box-sizing: border-box;
 }
 
+.clip-close {
+    clip-path: circle(0% at 50% 0%);
+}
+
+.clip-open {
+    clip-path: circle(150% at 50% 0%);
+}
+
 html {
   scroll-behavior: smooth;
 }

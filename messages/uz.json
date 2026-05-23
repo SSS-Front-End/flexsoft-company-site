@@ -1,5 +1,18 @@
 {
     "LanguageButton": {
         "Local": "O’zb"
+    },
+
+    "nav": {
+        "products": "Mahsulotlar",
+        "news": "Yangiliklar",
+        "partners": "Hamkorlar",
+        "team": "Jamoamiz",
+        "vacancies": "Vakansiyalar",
+        "contacts": "Kontaktlar"
+    },
+
+    "Contacts": {
+        "channel": "ko‘p kanalli"
     }
 }

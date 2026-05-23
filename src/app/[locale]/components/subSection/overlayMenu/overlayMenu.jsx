@@ -3,9 +3,10 @@
 import Button from "@/app/[locale]/components/ui/Button";
 import LanguageButton from "@/app/[locale]/components/ui/LanguageButton";
 import SocialIcon from "../../ui/SocialIcon";
+import { useTranslations } from "next-intl";
 
 export default function OverlayMenu({ isOpen }) {
-
+    const t = useTranslations("Contacts")
     return (
         <div
             className={`
@@ -14,7 +15,8 @@ export default function OverlayMenu({ isOpen }) {
                 left-1/2
                 -translate-x-1/2
 
-                h-full
+                w-screen
+                h-screen 
                 sm:h-[468px]
 
                 z-[49]
@@ -23,51 +25,51 @@ export default function OverlayMenu({ isOpen }) {
 
                 backdrop-blur-md
 
-                flex flex-col
+                flex
+                flex-col
                 items-center
                 justify-center
+
                 overflow-hidden
 
                 transition-all
-                duration-700
-                ease-[cubic-bezier(0.16,1,0.3,1)]
+                duration-[300ms]
+                ease-[cubic-bezier(0.83,0,0.17,1)]
+
+                will-change-[clip-path]
 
                 ${
                     isOpen
                         ? `
-                            w-screen
-                            h-screen
-                            rounded-none
                             opacity-100
+                            clip-open
                         `
                         : `
-                            w-[90%]
-                            h-[100px]
-
-                            rounded-b-[50px]
-
                             opacity-0
                             pointer-events-none
+                            clip-close
                         `
                 }
             `}
         >
-
-            
-            <Button className={`bg-[#FE8206] w-[450px] h-[60px] rounded-[10px] my-10`}>
+            <Button className="bg-[#FE8206] w-[450px] h-[60px] rounded-[10px] mt-[68px]">
                 Оставить заявку
             </Button>
 
-           <div>
-                <a href="#">+998 555 17-08-17 <span>(многоканальный)</span></a>
-           </div>
+            <div className="mt-[28px]">
+                <a href="#">
+                    +998 555 17-08-17{" "}
+                    <span>{`(${t("channel")})`}</span>
+                </a>
+            </div>
 
-           <LanguageButton />
+            <LanguageButton />
 
-           <SocialIcon />
+            <SocialIcon />
 
-           <p className="mt-[24px]">© 2003–2025, ООО «Flex Soft»</p>
-
+            <p className="mt-[28px]">
+                © 2003–2025, ООО «Flex Soft»
+            </p>
         </div>
     );
 }

@@ -1,5 +1,18 @@
 {
     "LanguageButton": {
         "Local": "Рус"
+    }, 
+
+    "nav": {
+        "products": "Продукты",
+        "news": "Новости",
+        "partners": "Партнеры",
+        "team": "Наша команда",
+        "vacancies": "Вакансии",
+        "contacts": "Контакты"
+    },
+
+    "Contacts": {
+        "channel": "многоканальный"
     }
 }

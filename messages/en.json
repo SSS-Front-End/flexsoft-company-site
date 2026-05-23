@@ -1,5 +1,18 @@
 {
     "LanguageButton": {
         "Local": "Eng"
+    }, 
+
+    "nav": {
+        "products": "Products",
+        "news": "News",
+        "partners": "Partners",
+        "team": "Our Team",
+        "vacancies": "Vacancies",
+        "contacts": "Contacts"
+    },
+
+    "Contacts": {
+        "channel": "multichannel"
     }
 }
