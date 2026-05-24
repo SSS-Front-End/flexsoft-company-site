@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useLocale } from 'next-intl'
 import { useRouter, usePathname } from '../../../../i18n/navigation';
 
-export default function LanguageButton() {
+export default function LanguageButton( { className } ) {
 
     const currentLocale = useLocale();
     const router = useRouter();
@@ -22,14 +22,14 @@ export default function LanguageButton() {
 
 
  return(
-            <div className="flex gap-4 mt-[28px]">
+            <div className={`flex gap-4 mt-[28px] ${className}`}>
                 {languages.map((lang) => {
 
                     const isActive = currentLocale === lang.code;
 
                     return (
                         <div key={lang.code}
-                        className={`relative h-[30px] rounded-[15px] flex items-center
+                        className={`relative max-w-[90px] h-[30px] rounded-[15px] flex items-center
                         cursor-pointer hover:bg-[#FFFFFF80] transition-colors duration-200
                         ${  isActive ? "bg-[#FFFFFF80]" : "bg-[#FFFFFF1A]" }`}
                         onClick={() => switchLanguage(lang.code)}

@@ -52,7 +52,7 @@ export default function OverlayMenu({ isOpen }) {
                 }
             `}
         >
-            <Button className="bg-[#FE8206] w-[450px] h-[60px] rounded-[10px] mt-[68px]">
+            <Button className="bg-[#FE8206] w-[450px] h-[60px] rounded-[10px] md:mt-[90px]">
                 Оставить заявку
             </Button>
 
