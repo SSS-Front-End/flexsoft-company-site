@@ -27,7 +27,7 @@ export default function Header() {
                     <div className="flex items-center max-w-[150px] h-[25px] sm:max-w-[200px] sm:h-[50px]">
                         <a href={`#`}>
                             <Image 
-                                src="/FlexSoft-Logo.svg" 
+                                src="/Image/FlexSoft-Logo.svg" 
                                 alt="Логотип FlexSoft" 
                                 width={150} 
                                 height={40}
