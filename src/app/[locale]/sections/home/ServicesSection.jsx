@@ -18,7 +18,7 @@ const services = [
 
 export default function ServicesSection() {
     return (
-        <section className="py-[120px]">
+        <section className="">
             <Container>
 
                 <SectionTitle

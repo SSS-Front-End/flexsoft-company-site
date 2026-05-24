@@ -1,54 +1,20 @@
-import Container from "@/app/[locale]/components/ui/Container";
-import Button from "@/app/[locale]/components/ui/Button";
 import Image from 'next/image'; 
+import ServicesSection from './ServicesSection';
+import Container from '../../components/ui/Container';
 
 
 export default function ProductSection() {
   return (
-    <section className="relative pt-[160px] pb-[140px] overflow-hidden">
-
-      <div className="absolute top-0 left-1/2 -translate-x-1/2">
-        <Image src="/Ellipse-grey-500px.svg"  width={500} height={500} priority alt="Ellipse-grey" />
-      </div>
-
-      <div className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#5B67FF]/20 blur-[140px]" />
-
+    <section className="relative py-[120px] min-h-[880px]">
       <Container>
-
-        <div className="max-w-[900px] mx-auto text-center">
-
-          <p className="text-[#A1A1AA] mb-6 uppercase tracking-[3px] text-sm">
-            Modern software solutions
-          </p>
-
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8">
-            We build scalable{" "}
-            <span className="bg-gradient-to-r from-[#5B67FF] to-[#8B5CF6] bg-clip-text text-transparent">
-              digital products
-            </span>
-          </h1>
-
-          <p className="text-[#A1A1AA] text-lg md:text-xl mb-10 max-w-[700px] mx-auto leading-relaxed">
-            Design. Development. Strategy.
-            Premium digital experiences for modern businesses.
-          </p>
-
-          <div className="flex items-center justify-center gap-4 flex-wrap">
-
-            <Button>
-              Start Project
-            </Button>
-
-            <button className="px-6 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-all duration-300">
-              Our Services
-            </button>
-
-          </div>
-
-        </div>
-
+        <div className={`absolute xl:max-w-[500px] w-full top-0 left-1/2 -translate-x-1/2`}><img src="./ProductsSection/Ellipse-grey-500px.svg" alt="Ellipse-grey-500px"></img></div>
+        <div className={`absolute xl:max-w-[400px] w-full top-[106px] left-0`}><img src="./ProductsSection/Ellipse-orange-400px.svg" alt="Ellipse-orange-400px"></img></div>
+        <div className={`absolute xl:max-w-[100px] w-full top-[633px] left-[61px]`}><img src="./ProductsSection/Ellipse-grey-100px.svg" alt="Ellipse-grey-100px"></img></div>
+        <div className={`absolute xl:max-w-[250px] w-full top-[553px] left-[633px]`}><img src="./ProductsSection/Ellipse-orange-250px.svg" alt="Ellipse-orange-250px"></img></div>
       </Container>
+      
 
+      <ServicesSection className="z-1"/>
     </section>
   );
 }

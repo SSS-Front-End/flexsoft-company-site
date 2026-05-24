@@ -33,8 +33,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  background: #0B0F19;
+  /* background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+  linear-gradient(0deg, rgba(30, 34, 105, 0.05), rgba(30, 34, 105, 0.05)); */
+  background: #1E22690D;
   color: white;
   overflow-x: hidden;
 }

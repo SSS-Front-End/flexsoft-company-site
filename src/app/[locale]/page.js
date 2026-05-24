@@ -1,4 +1,7 @@
+import Main from "./components/layout/Main";
 import Header from "./components/layout/Header";
+import ServicesSection from "./sections/home/ServicesSection";
+import Image from "next/image"
 
 export function generateStaticParams() {
   return [
@@ -13,7 +16,7 @@ export default function HomePageS() {
     <>
       <Header />
 
-      <main className="bg-[#F4F5F8]"></main>
+      <Main />
     </>
   );
 };
