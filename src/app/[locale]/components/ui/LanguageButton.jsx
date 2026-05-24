@@ -11,9 +11,9 @@ export default function LanguageButton( { className } ) {
     const pathname = usePathname();
 
     const languages = [
-        { code: "ru", name: "Рус", flag: "/LanguageButton/LanguageButtonRu.svg" },
-        { code: "en", name: "Eng", flag: "/LanguageButton/LanguageButtonUSA.svg" },
-        { code: "uz", name: "O'zb", flag: "/LanguageButton/LanguageButtonUz.svg" }
+        { code: "ru", name: "Рус", flag: "./LanguageButton/LanguageButtonRu.svg" },
+        { code: "en", name: "Eng", flag: "./LanguageButton/LanguageButtonUSA.svg" },
+        { code: "uz", name: "O'zb", flag: "./LanguageButton/LanguageButtonUz.svg" }
     ];
 
     const switchLanguage = (locale) => {

@@ -62,7 +62,7 @@ export default function Header() {
                             ${isVisible ? 'opacity-100' : 'opacity-0'} `}
                         onClick={() => setIsOpen(true)}>
 
-                        <img src="/Burger.svg" alt="Меню" />
+                        <img src="./Burger.svg" alt="Меню" />
                     </div>
                     )}
                     
